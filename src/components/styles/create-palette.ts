@@ -4,8 +4,8 @@ import pink from './types/colors/pink';
 import grey from './types/colors/grey';
 import red from './types/colors/red';
 import common from './types/colors/common';
-import { getContrastRatio, darken, lighten } from './color-manipulator';
-import { PaletteOptions } from './types/palette'
+import { getContrastRatio } from './color-manipulator';
+import { PaletteOptions , darken } from './types/palette'
 
 export const light = {
   text: {
