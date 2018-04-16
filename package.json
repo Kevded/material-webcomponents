@@ -1,22 +1,24 @@
 {
   "name": "material-webcomponents",
   "version": "1.0.0-beta.2",
-  "description":
-    "Webcomponents that implements Google's Material Design. Developed material-webcomponents using Stenciljs.",
+  "description": "Webcomponents that implements Google's Material Design. Developed material-webcomponents using Stenciljs.",
   "main": "dist/material-webcomponents.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "browser": "dist/material-webcomponents.js",
   "scripts": {
     "build": "stencil build",
-    "dev":
-      "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "test": "jest --no-cache",
+    "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "next",
+    "@stencil/sass": "0.0.3",
     "classnames": "^2.2.5",
     "deepmerge": "^2.0.1",
     "jss": "^9.5.0",
@@ -25,9 +27,11 @@
     "warning": "^3.0.0"
   },
   "devDependencies": {
+    "@stencil/core": "^0.7.22",
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
-    "tslint": "^5.9.1"
+    "@types/jest": "^21.1.1",
+    "jest": "^21.2.1"
   },
   "repository": {
     "type": "git",
@@ -41,11 +45,23 @@
     "Angular Components",
     "Javascript Components"
   ],
-  "author":
-    "Santhosh Beerelli <san2beerelli@gmail.com> (http://san2beerelli.com/)",
+  "author": "Santhosh Beerelli <san2beerelli@gmail.com> (http://san2beerelli.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/san2beerelli/material-webcomponents/issues"
   },
-  "homepage": "https://github.com/san2beerelli/material-webcomponents#readme"
+  "homepage": "https://github.com/san2beerelli/material-webcomponents#readme",
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
 }
