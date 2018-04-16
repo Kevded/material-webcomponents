@@ -11,7 +11,7 @@ export class MWCDialogFooter{
   @Element() dialogFooterEl: HTMLElement;
 
   componentDidLoad(){
-    Array.from(this.dialogFooterEl.children[0].children).forEach((item,index)=>{
+    Array.from(this.dialogFooterEl.children[0].children).forEach((item)=>{
         item.children[0].classList.add('mdc-dialog__footer__button')
         if(item.getAttribute('type') == "accept"){
             item.children[0].classList.add('mdc-dialog__footer__button--accept')

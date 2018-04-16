@@ -76,8 +76,8 @@ export class MWCRadio{
         <input class="mdc-radio__native-control"
                 type="radio" checked={this.checked}
                 name={this.name}
-                onFocus = {(evt)=> this.onFocus()}
-                onBlur = {(evt)=> this.onBlur()}/>
+                onFocus = { () => this.onFocus() }
+                onBlur = { () => this.onBlur() }/>
         <div class="mdc-radio__background">
             <div class="mdc-radio__outer-circle"></div>
             <div class="mdc-radio__inner-circle"></div>

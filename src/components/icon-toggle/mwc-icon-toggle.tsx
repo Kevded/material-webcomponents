@@ -87,8 +87,8 @@ export class MWCIconToggle{
             role="button" tabindex="-1"
             aria-pressed={this.toggleon}
             aria-disabled={this.disabled}
-            onFocus = {(evt)=> this.onFocus()}
-            onBlur = {(evt)=> this.onBlur()}
+            onFocus = {()=> this.onFocus()}
+            onBlur = {()=> this.onBlur()}
             data-toggle-on={this.getToggleOn()}
             data-toggle-off={this.getToggleOff()}>
             {this.officon}

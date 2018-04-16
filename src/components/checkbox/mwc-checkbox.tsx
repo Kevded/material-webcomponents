@@ -73,8 +73,8 @@ export class MWCCheckbox{
         <input type="checkbox" id="my-checkbox" ref={(input) => { this.inputComp = input; }}
                disabled={this.disabled}
                checked={this.checked}
-               onFocus = {(evt)=> this.onFocus()}
-               onBlur = {(evt)=> this.onBlur()}
+               onFocus = {()=> this.onFocus()}
+               onBlur = {()=> this.onBlur()}
                onChange= {(evt)=> this.change.emit(evt)}
                class="mdc-checkbox__native-control"/>
         <div class="mdc-checkbox__background">
