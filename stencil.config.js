@@ -1,6 +1,7 @@
+const sass = require('@stencil/sass');
 exports.config = {
   namespace: 'material-webcomponents',
-  generateDistribution: true,
+  // generateDistribution: true,
   bundles: [
     { components: [
       'mwc-button',
@@ -32,7 +33,7 @@ exports.config = {
       'mwc-snackbar',
       'mwc-switch',
       'mwc-tabbar',
-      'mwc-textfield',
+      //'mwc-textfield',
       'mwc-theme',
       'mwc-toolbar',
       'mwc-toolbar-section',
@@ -43,11 +44,23 @@ exports.config = {
       'mwc-viewport'
       ] }
   ],
-   sassConfig:{
-      "includePaths":[
-        "./node_modules"
-      ]
+  plugins:[
+    sass({ includePaths: ['node_modules/'] })
+  ],
+  outputTargets:[
+    { 
+      type: 'dist' 
+    },
+    { 
+      type: 'www',
+      serviceWorker: false
     }
+  ],
+  copy: [
+    {
+      src: 'index.dev.html'
+    }
+  ]
 };
 
 exports.devServer = {
