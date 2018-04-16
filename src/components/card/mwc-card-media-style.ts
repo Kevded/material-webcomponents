@@ -1,9 +1,9 @@
-import {getTheme} from '../util/mwc-util'
+// import {getTheme} from '../util/mwc-util'
 import setupJss from '../styles/setup-jss'
 import deepmerge from 'deepmerge'
-import createTheme from '../styles/create-theme'
+// import createTheme from '../styles/create-theme'
 
-const theme = createTheme(getTheme())
+// const theme = createTheme(getTheme())
 
 class CardMediaStyle{
    defaultStyle: object = {

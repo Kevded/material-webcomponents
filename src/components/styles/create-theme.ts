@@ -8,7 +8,7 @@ import shadows from './create-shadows';
 import transitions from './create-transitions';
 import zIndex from './create-zindex';
 import spacing from './create-spacing';
-import {ThemeOptions, Theme} from './theme'
+import { Theme } from './theme'
 
 function createTheme(options?: any):Theme {
   const {
