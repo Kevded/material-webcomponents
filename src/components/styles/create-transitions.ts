@@ -51,7 +51,7 @@ export default {
       duration: durationOption = duration.standard,
       easing: easingOption = easing.easeInOut,
       delay = 0,
-      ...other
+      //...other
     } = options;
 
     return (Array.isArray(props) ? props : [props])
