@@ -1,4 +1,4 @@
-import { Component, Prop, Element,  Method, Event, EventEmitter } from '@stencil/core';
+import { Component, Prop, Element, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'mwc-switch',

@@ -1,4 +1,4 @@
-import { Component, Prop, Element } from '@stencil/core';
+import { Component, Element } from '@stencil/core';
 
 @Component({
   tag: 'mwc-toolbar-icon',

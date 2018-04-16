@@ -1,6 +1,6 @@
 import { Component, Prop, Element  } from '@stencil/core';
 import theme from '../util/theme'
-import {setTheme, getTheme} from '../util/mwc-util'
+import {setTheme} from '../util/mwc-util'
 @Component({
   tag: 'mwc-theme',
   //styleUrl: 'mwc-theme.scss',

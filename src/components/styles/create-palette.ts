@@ -5,7 +5,7 @@ import grey from './types/colors/grey';
 import red from './types/colors/red';
 import common from './types/colors/common';
 import { getContrastRatio } from './color-manipulator';
-import { PaletteOptions , darken } from './types/palette'
+import { PaletteOptions } from './types/palette'
 
 export const light = {
   text: {
