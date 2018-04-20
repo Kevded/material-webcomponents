@@ -43,7 +43,8 @@ export class MWCListItem{
 
   render() {
     return (
-       <li class={this.getListItemClassName()} ref={(listItem) => { this.listItem = listItem; }}>
+       <li class={this.getListItemClassName()} 
+       ref={(listItem) => { this.listItem = listItem; }}>
          <slot />
        </li>
     )
