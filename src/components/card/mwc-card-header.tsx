@@ -7,14 +7,14 @@ import { Component, Prop } from '@stencil/core';
 })
 export class MWCCardHeader{
 
-  @Prop() _title: string;
+  @Prop() title: string;
   @Prop() subtitle : string;
 
   renderTitle(){
-      if(this._title){
+      if(this.title){
           return(
                <h1 class="mdc-card__title mdc-card__title--large">
-               {this._title}
+               {this.title}
                </h1>
           )
       }
